@@ -1,0 +1,326 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="KhanAgro: innovación tecnológica sostenible para los sectores industrial, agropecuario, agroalimentos y educación.">
+
+    <title>KhanAgro | Innovación tecnológica sostenible</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="#inicio">
+        <img src="{{ url_for('static', filename='images/LOGO/logo.jpeg') }}" alt="KhanAgro">
+    </a>
+
+    <button class="menu-button" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav class="nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#sectores">Sectores</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#proyectos">Proyectos</a>
+        <a class="contact-link" href="#contacto">Contáctanos</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-copy">
+
+        <p class="label">
+            Innovación tecnológica sostenible
+        </p>
+
+        <h1>
+            Tecnología que transforma <i>realidades.</i>
+        </h1>
+
+        <p class="lead">
+            Desarrollamos proyectos, productos y servicios en electrónica,
+            mecatrónica, electromecánica, robótica, programación y telecomunicaciones
+            para impulsar un futuro más eficiente y sostenible.
+        </p>
+
+        <div class="actions">
+
+            <a class="button"
+               href="https://wa.me/593978932783"
+               target="_blank">
+
+                Escríbenos por WhatsApp
+
+            </a>
+
+            <a class="simple-link" href="#soluciones">
+
+                Conoce KhanAgro
+
+            </a>
+
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <b>8+</b>
+                <small>Áreas de experiencia</small>
+            </div>
+
+            <div>
+                <b>360°</b>
+                <small>Soluciones tecnológicas</small>
+            </div>
+
+            <div>
+                <b>+593</b>
+                <small>Innovación desde Ecuador</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="{{ url_for('static',
+        filename='images/' + proyectos[0].carpeta + '/' + proyectos[0].imagen) }}"
+        alt="{{ proyectos[0].nombre }}">
+
+    </div>
+
+</section>
+
+<section class="intro" id="nosotros">
+
+    <p class="label">Somos KhanAgro</p>
+
+    <h2>
+        Innovación que conecta tecnología,
+        sostenibilidad y desarrollo.
+    </h2>
+
+    <p>
+        Somos una empresa ecuatoriana especializada en innovación tecnológica,
+        automatización, desarrollo de software, robótica,
+        electrónica, electricidad, telecomunicaciones y proyectos STEAM.
+    </p>
+
+</section>
+
+<section class="sectors" id="sectores">
+
+    <div class="title-center">
+
+        <p class="label">Sectores</p>
+
+        <h2>
+            Soluciones para diferentes sectores productivos.
+        </h2>
+
+    </div>
+
+    <div class="sector-grid">
+
+        <article>
+            <span>01</span>
+            <h3>Industrial</h3>
+            <p>Automatización y control industrial.</p>
+        </article>
+
+        <article>
+            <span>02</span>
+            <h3>Agropecuario</h3>
+            <p>Tecnología aplicada al campo.</p>
+        </article>
+
+        <article>
+            <span>03</span>
+            <h3>Educación</h3>
+            <p>Programas STEAM y Robótica.</p>
+        </article>
+
+        <article>
+            <span>04</span>
+            <h3>Transformación Digital</h3>
+            <p>Software y automatización empresarial.</p>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="solutions" id="soluciones">
+
+    <div class="title-row">
+
+        <div>
+
+            <p class="label">
+                Capacidades KhanAgro
+            </p>
+
+            <h2>
+                De la idea a la solución.
+            </h2>
+
+        </div>
+
+        <p>
+            Convertimos necesidades en soluciones tecnológicas.
+        </p>
+
+    </div>
+
+    <div class="cards">
+
+        <article>
+            <div class="icon">◈</div>
+            <h3>Electrónica</h3>
+            <p>Diseño electrónico profesional.</p>
+        </article>
+
+        <article class="dark">
+            <div class="icon">⌘</div>
+            <h3>Robótica</h3>
+            <p>Automatización inteligente.</p>
+        </article>
+
+        <article>
+            <div class="icon">⚡</div>
+            <h3>Electricidad</h3>
+            <p>Sistemas eléctricos industriales.</p>
+        </article>
+
+        <article>
+            <div class="icon">⌁</div>
+            <h3>Programación</h3>
+            <p>Software a la medida.</p>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="projects" id="proyectos">
+
+    <div class="title-center">
+
+        <p class="label">
+            Experiencia KhanAgro
+        </p>
+
+        <h2>
+            Áreas donde hemos desarrollado proyectos.
+        </h2>
+
+        <p>
+            Nuestra experiencia abarca múltiples sectores tecnológicos.
+        </p>
+
+    </div>
+
+    <div class="projects-grid">
+
+        {% for proyecto in proyectos %}
+
+        <article class="project-card">
+
+            <img
+                src="{{ url_for('static',
+                filename='images/' + proyecto.carpeta + '/' + proyecto.imagen) }}"
+                alt="{{ proyecto.nombre }}">
+
+            <div class="project-info">
+
+                <h3>{{ proyecto.nombre }}</h3>
+
+                <p>{{ proyecto.descripcion }}</p>
+
+            </div>
+
+        </article>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<section class="cta" id="contacto">
+
+    <div>
+
+        <p class="label">
+            Contáctanos
+        </p>
+
+        <h2>
+            Construyamos juntos tu próximo proyecto.
+        </h2>
+
+        <p>
+            Estamos listos para ayudarte.
+        </p>
+
+    </div>
+
+    <div class="contact-actions">
+
+        <a class="button dark-button"
+           href="https://wa.me/593978932783">
+
+            +593 97 893 2783
+
+        </a>
+
+        <a class="email"
+           href="mailto:contacto@khanagro.com">
+
+            contacto@khanagro.com
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <a class="logo" href="#inicio">
+        <img src="{{ url_for('static', filename='images/LOGO/logo.jpeg') }}" alt="KhanAgro">
+    </a>
+
+    <p>
+        Innovación tecnológica para un futuro sostenible.
+    </p>
+
+    <small>
+        © 2026 KhanAgro. Todos los derechos reservados.
+    </small>
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
