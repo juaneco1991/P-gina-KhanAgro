@@ -10,9 +10,9 @@ PROYECTOS = [
         "descripcion": "Desarrollo de soluciones tecnológicas para el sector agropecuario, automatización y optimización de procesos productivos."
     },
     {
-        "nombre": "Electricidad",
+        "nombre": "Electromecánica",
         "carpeta": "ELECTRICIDAD",
-        "imagen": "electricidad.jpeg",
+        "imagen": "electromecanica.jpeg",
         "descripcion": "Diseño e implementación de sistemas eléctricos, instalaciones industriales y soluciones energéticas."
     },
     {
