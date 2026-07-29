@@ -28,10 +28,10 @@ PROYECTOS = [
         "descripcion": "Fabricación, integración y mantenimiento de equipos tecnológicos."
     },
     {
-        "nombre": "OIT",
+        "nombre": "IoT",
         "carpeta": "OIT",
         "imagen": "oit.jpeg",
-        "descripcion": "Desarrollo de proyectos de innovación tecnológica y transformación digital."
+        "descripcion": "Sistemas de monitoreo IoT fiables para la industria, la agricultura y el sector hídrico, permitiendo operaciones eficientes basadas en datos."
     },
     {
         "nombre": "Programación",
